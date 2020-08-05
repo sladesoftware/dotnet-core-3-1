@@ -25,18 +25,20 @@ Once running, the application should be listening on the following ports:
 The following endpoints are then available:
 | HTTP Verb | Route |
 |-----------|-------|
-| GET       | /api/todo/{fail} |
-| PUT       | /api/todo/{fail} |
-| PATCH     | /api/todo/{id}/{fail} |
-| DELETE    | /api/todo/{id}/{fail} |
+| GET       | `/api/todo/{fail}` |
+| PUT       | `/api/todo/{fail}` |
+| PATCH     | `/api/todo/{id}/{fail}` |
+| DELETE    | `/api/todo/{id}/{fail}` |
 
 Route parameters:
  * `fail` - optional boolean (true or false) value
- ** Defaults to `false`
- ** When `true`, simulates an error in the endpoint
+   * Defaults to `false`
+   * When `true`, simulates an error in the endpoint
  * `id` - required integer value that specifies the unique identifier of the record to be updated or deleted
 
 ## Author
-Samuel Slade - Independent Consultant and Director at [Slade Software Ltd](https://www.sladesoftware.co.uk).
+Samuel Slade<br />
+Independent Consultant<br />
+Director | [Slade Software Ltd](https://www.sladesoftware.co.uk)<br />
 [samuel.slade@sladesoftware.co.uk](mailto:samuel.slade@sladesoftware.co.uk)
 
