@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotnetApplication.Api.Controllers
@@ -16,7 +14,7 @@ namespace DotnetApplication.Api.Controllers
         }
 
         [HttpGet("{fail:bool?}")]
-        public IActionResult Get(bool fail = false)
+        public IActionResult Get([FromRoute]bool fail = false)
         {
             if (fail) throw new System.Exception("Simulated failure");
 
@@ -49,7 +47,7 @@ namespace DotnetApplication.Api.Controllers
         }
 
         [HttpDelete("{id:int}/{fail:bool?}")]
-        public IActionResult Delete(int id, bool fail = false)
+        public IActionResult Delete([FromRoute]int id, [FromRoute]bool fail = false)
         {
             if (fail) throw new System.Exception("Simulated failure");
 
